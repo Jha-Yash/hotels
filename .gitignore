@@ -1,0 +1,6 @@
+#ignore node module directory bcz ye space boht leta hai and isme hum kuch chnges bhi ni krte toh no need to track
+node_modules/  
+
+# other entries
+notes.js
+greeting.txt
