@@ -4,3 +4,4 @@ node_modules/
 # other entries
 notes.js
 greeting.txt
+.env

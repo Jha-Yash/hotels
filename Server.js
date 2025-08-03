@@ -51,8 +51,11 @@ const express = require('express') //import kraa
 const app = express();//express ka blueprint app mai save krlia
 const port = 3000 //ye port/room no. hai jo humne decide kiya hai
 const db= require('./db');
+require('dotenv').config();
 const bodyParser=require('body-parser');
 app.use(bodyParser.json());//req.body (requestbody)
+const PORT=process.env.PORT||3000;//jb hum isko online push krengai toh possible hhai ki machine kuch apne port no. pai run krey is
+//code ko toh isliye ye use krte ki ya toh apna kuch hai toh uspe krlo run ya use local port(3000)
 
 app.get('/', (req, res) => { //get kai 2 parameter / agr koi bhi address kai baad enter krta hai toh usko data milega dusra para fn
     //fn mai 2 para request and respond
