@@ -92,8 +92,8 @@ app.use('/person',personroutes); //ab agr log /person pai hit krengai toh person
 const menuroutes=require('./routes/menurotes');
 app.use('/menuitem',menuroutes);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${PORT}`)
 }) //direct app.listen(3000) bhi kr skte to keep server alive,but to track server zinda hai ya nhi ek fn bnaa liya jo inform krega
 //Ctrl+c server dead ho jaata usse ,usko again restart kai liye node server.js
 
